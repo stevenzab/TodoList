@@ -1,2 +1,0 @@
-# TodoList
-TodoList in TypeScript
