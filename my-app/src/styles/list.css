@@ -80,12 +80,39 @@
   }
 
   .task button {
-    flex: 20%;
+    /* flex: 20%;
     height: 100%;
     border: none;
-    background-color: lightseagreen;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    color: white;
+    cursor: pointer; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+  }
+
+/* .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  } */
+
+  /* .circle:hover {
+    background-color: blue;
+  } */
+
+.delete {
+    display: flex;
   }
