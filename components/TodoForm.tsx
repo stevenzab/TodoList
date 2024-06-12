@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 
-const TodoForm = ({addItems}) => {
+const TodoForm = ({ addItems }) => {
 
   const [items, setItems] = useState("");
 
@@ -11,7 +11,6 @@ const TodoForm = ({addItems}) => {
     e.preventDefault();
 
     addItems(items);
-    setItems("");
   }
   return (
   <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center">

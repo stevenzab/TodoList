@@ -35,6 +35,10 @@ const Home = () => {
   }
 
 
+  useEffect(() => {
+    localStorage.setItem("Items", JSON.stringify(addItems))
+  }, [addItems])
+
   return (
   <div className="p-5">
     <TodoForm addItems={addItem} />
