@@ -4,7 +4,7 @@ import TodoForm from "../components/TodoForm";
 import TodoList from "@/components/todoList";
 
 const Home = () => {
-  const [addItems, setAddedItems] = useState([]);
+  const [addItems, setAddedItems] = useState<{ title: string, completed: boolean, id: string }[]>([]);
 
   function addItem(title: string) {
     setAddedItems((prevItems) => {

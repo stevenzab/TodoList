@@ -1,4 +1,7 @@
-const TodoItem = ({ id, completed, title, toggleItems, deleteItems }) => {
+const TodoItem = ({ id, completed, title, toggleItems, deleteItems }:
+  { id: number, completed: boolean, title: string,
+    toggleItems: (id: number, checked: boolean) => void,
+    deleteItems: (id: number) => void }) => {
   return (
     <li key={id}>
     <label>
